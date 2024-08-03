@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://3i5hlyv1160e"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_onacb"]
+[ext_resource type="PackedScene" uid="uid://baljy63jw408f" path="res://BG.tscn" id="2_b6vka"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_onacb")
+
+[node name="Play" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 400.0
+offset_top = 160.0
+offset_right = 700.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "play me!!!!!"
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 392.0
+offset_top = 368.0
+offset_right = 692.0
+offset_bottom = 468.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("2_b6vka")]
+offset = Vector2(2.08165e-12, 2.08165e-12)
+transform = Transform2D(1, 0, 0, 1, 2.08165e-12, 2.08165e-12)
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
