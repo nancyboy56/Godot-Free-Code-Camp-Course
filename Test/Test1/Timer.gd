@@ -20,4 +20,3 @@ func _on_timeout():
 	cherryTemp.position = Vector2(x, y)
 	add_child(cherryTemp)
 	
-
