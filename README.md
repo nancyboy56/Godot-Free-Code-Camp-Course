@@ -1,2 +1,3 @@
-# Godot Test
- Making a basic platformer in godot to learn 
+# Free Code Camp: Godot Course
+I followed this tutorial to make a basic platformer: https://www.youtube.com/watch?v=S8lMTwSRoRg
+
